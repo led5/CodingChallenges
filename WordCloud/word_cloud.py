@@ -2,7 +2,7 @@ import html
 
 # Creates list which contains the text file
 
-f = open('wonderland.txt', "r")
+f = open("wonderland.txt", "r")
 
 wholeStory = []
 
@@ -22,7 +22,7 @@ for word in wholeStory:
         
 # Loop over mostFrequent dictionary to remove stop words        
         
-s = open('stopwords2.txt', "r")
+s = open("stopwords.txt", "r")
 
 stopList = []
 
@@ -34,11 +34,7 @@ for stopWord in stopList:
      if stopWord in mostFrequent:
          del mostFrequent[stopWord]
         
-print(mostFrequent)
-
-
 maximum = max(mostFrequent.values())
-print(maximum)
 
 for word, size in mostFrequent.items():
      if size >= .8*maximum: 
