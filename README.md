@@ -8,3 +8,5 @@ A repo to house problems I've done for practice.
 A running list of all the problems present in the repository: 
 
 * PalindromeChecker
+* WordCloud 
+
