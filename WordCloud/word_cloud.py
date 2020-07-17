@@ -1,13 +1,16 @@
 from htmlFunctions import makeHTMLword, makeHTMLbox 
+from pathlib import Path
+import string
 
 # Creates list which contains the text file
-f = open("wonderland.txt", "r")
-
 wholeStory = []
 
-for line in f:
-    excerpts = line.split()
-    wholeStory += excerpts
+f = Path("wonderland.txt")
+text = f.read_text()
+words = text.split() 
+table = str.maketrans('', '', string.punctuation)
+stripped = [w.translate(table) for w in words]
+wholeStory += stripped 
 
 # Count how many words in wholeStory
 mostFrequent = {}
@@ -39,7 +42,7 @@ minimum = min(mostFrequent.values())
 def _main():
     cloudString = '' 
     for word,size in mostFrequent.items():
-             cloudString += makeHTMLword(word, size, maximum, minimum)
+        cloudString += makeHTMLword(word, size, maximum, minimum)
     outstring = makeHTMLbox(cloudString)
     f = open('cloud.html','w')
     f.write(outstring)
