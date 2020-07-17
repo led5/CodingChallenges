@@ -8,9 +8,9 @@ wholeStory = []
 f = Path("wonderland.txt")
 text = f.read_text()
 words = text.split() 
-table = str.maketrans('', '', string.punctuation)
+table = str.maketrans('', '', string.punctuation) # "" - still persist 
 stripped = [w.translate(table) for w in words]
-wholeStory += stripped 
+wholeStory += stripped
 
 # Count how many words in wholeStory
 mostFrequent = {}
@@ -51,3 +51,4 @@ def _main():
 
 if __name__ == '__main__':
     _main()
+

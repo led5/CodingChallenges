@@ -24,7 +24,8 @@ def makeHTMLbox(body):
     '''
     boxStr = """<div style=\"
     width: 800px;
-    background-color: rgb(250,250,250);
+    font-family: Apple Chancery, cursive;
+    color: blue;  
     border: 1px grey solid;
     text-align: center\">%s</div>
     """
