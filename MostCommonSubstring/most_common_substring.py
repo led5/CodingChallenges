@@ -25,7 +25,8 @@ def mostCommonK(dna, k):
          
 def mostCommonSubstring(dna, k, m):
     
-     """Running: For example, mostCommonSubstring('gactctcagc', 2, 6) returns
+     """ 
+      Running: For example, mostCommonSubstring('gactctcagc', 2, 6) returns
      'ctc' since it occurs twice and is longer than 'ct' and 'tc' which each
       also occur twice, and all other substrings of length 2, 3, 4, 5, or 6
       only occur once. Note that the occurrences can overlap.
@@ -39,7 +40,6 @@ def mostCommonSubstring(dna, k, m):
             if y > highestCount:
                 commonString = x
                 highestCount = y
-                
      return commonString 
 
 def runMostCommonSubstring():

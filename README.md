@@ -11,6 +11,7 @@ Running list of all the problems present in the repository:
 * WordCloud 
 * MostCommonSubstring 
 * MostCommonPrefix
+* FizzBuzz  
 
 
 
