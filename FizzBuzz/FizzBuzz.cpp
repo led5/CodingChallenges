@@ -3,20 +3,17 @@
 // Brute force solution for FizzBuzz 
 
 std::string fizzBuzz(int num1, int num2){
-
-    std::string output = "";
-
     for(int i=1; i <= 100; i++){
-        if((i % num1 == 0) && (i % num2) == 0)
-            std::cout << "FizzBuzz\n";
-        else if (i % num1 == 0)
-            std::cout << "Fizz\n";
-        else if (i % num2 == 0)
-            std::cout << "Buzz\n";
-        else 
-            std::cout << i << "\n";    
+
+        bool multipleOfNum1 = i % num1 == 0;
+        bool multipleOfNum2 = i % num2 == 0;
+
+        if(multipleOfNum1 && multipleOfNum2) { std::cout << "FizzBuzz\n"; }
+        else if (multipleOfNum1) { std::cout << "Fizz\n"; }
+        else if (multipleOfNum2) { std::cout << "Buzz\n"; } 
+        else  { std::cout << i << "\n"; }  
     } 
-    return output; 
+    return ""; 
 };
 
 int main(){
@@ -30,16 +27,14 @@ int main(){
 
     // Solution:
     std::cout << std::endl;
-    std::cout << "-----Example 1------" << "\n";
+    std::cout << "-----Result---------" << "\n";
      std::cout << std::endl;
-    std::cout << "Factors of " << num1 << " and " << num2 << "\n";
+    std::cout << "FizzBuzz of " << num1 << " and " << num2 << "\n";
      std::cout << std::endl;
     std::cout << "--------------------" << "\n";
 
     std::cout << std::endl;
     std::string retVal = fizzBuzz(num1,num2); 
-    std::cout << retVal << " "; 
-    std::cout << std::endl;
-
+    std::cout << retVal; 
 
 }
