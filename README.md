@@ -12,6 +12,9 @@ Running list of all the problems present in the repository:
 * MostCommonSubstring 
 * MostCommonPrefix
 * FizzBuzz  
+* DiagonalDifference
+
+
 
 
 
