@@ -3,12 +3,10 @@
 # include "vector"
 # include "random"
 
-
-
 void diagonalDifference(std::vector<std::vector<int> > arr) {
     int principal = 0, secondary = 0, diff = 0; 
-    for(int i = 0; i < arr.size(); i++){
-        for(int j = 0; j < arr.size(); j++){
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
             if (i == j)
                 principal += arr[i][j];
             if ((i+j) == (arr.size()-1))
@@ -30,19 +28,12 @@ int main(){
     int difference = 0, h = 0, w = 0;
     srand((unsigned int)time(NULL));
 
-    std::cout << std::endl;
-    std::cout << "Enter matrix height: " << std::endl;
-    std::cin >> h;
-    std::cout << "Enter matrix width: " << std::endl; 
-    std::cin >> w;
-    std::cout << std::endl;
-
-    mat.resize(h); 
-    for(int i = 0; i < h; i++){
-        mat[i].resize(w); 
-        for(int j = 0; j < w; j++){
+    mat.resize(3); 
+    for(int i = 0; i < 3; i++){
+        mat[i].resize(3); 
+        for(int j = 0; j < 3; j++){
             mat[i][j] = rand() % 100;
-        }
+        } 
     }
     diagonalDifference(mat); 
 }
