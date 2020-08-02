@@ -10,14 +10,14 @@ def mostCommonK(dna, k):
     bestCount = 0 # the highest frequency 
     
     for i in range(len(dna)-k+1):       
-            canidate = dna[i:i+k]
+            candidate  = dna[i:i+k]
             count = 1             
             for j in range(i+1, len(dna)-k+1):
                 check = dna[j: j+k]
-                if check == canidate:
+                if check == candidate :
                     count += 1
             if count > bestCount:
-                best = canidate
+                best = candidate 
                 bestCount = count
                 
     return (best, bestCount)
@@ -36,7 +36,7 @@ def mostCommonSubstring(dna, k, m):
      highestCount = 0 # greatest frequency overall 
      
      for i in range(k,m):
-            x, y = mostCommonK(dna, i) # best, bestCount 
+            x, y = mostCommonK(dna, i)  
             if y > highestCount:
                 commonString = x
                 highestCount = y
@@ -44,10 +44,11 @@ def mostCommonSubstring(dna, k, m):
 
 def runMostCommonSubstring():
     
-    filename = input("Please enter filename:")
+    filename = input("Please enter filename: ")
     infile = open(filename, "r")
     dna = infile.read()
-    mostCommonSubstring(dna, 2, 6)
+    ret = mostCommonSubstring(dna, 2, 6)
+    print('Most common substring: ', ret)
     
 runMostCommonSubstring()
 
