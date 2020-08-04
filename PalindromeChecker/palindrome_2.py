@@ -2,11 +2,11 @@ import PySimpleGUI as sg
 
 sg.theme('DarkBlue13')	
 
-layout = [[sg.Text('Your typed chars appear here:'), sg.Text(size=(15,1), key='-OUTPUT-')],
-          [sg.Input(key='-IN-')],
-          [sg.Button('Check'), sg.Button('Exit')]]
+layout = [[sg.Text('Input:'), sg.Text(size=(15,1), key='-OUTPUT-')],
+           [sg.Input(key='-IN-')],
+           [sg.Button('Check'), sg.Button('Clear'), sg.Button('Exit')]]
 
-window = sg.Window('Window Title', layout)
+window = sg.Window('Palindrome Checker', layout)
 
 def check_palindrome(p):
     ret = ''
@@ -21,8 +21,10 @@ while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Exit':	
         break
+    if event == 'Clear': 
+        window.FindElement(key).Update('')
     if event == 'Check':
          is_palindrome = check_palindrome(values['-IN-']) 
-         window['-OUTPUT-'].update(is_palindrome) 
+         sg.popup('Results', '', is_palindrome)
 
 window.close()
