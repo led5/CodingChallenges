@@ -9,6 +9,7 @@ Running list of all the problems present in the repository:
 * FizzBuzz  
 * DiagonalDifference
 * Anagrams 
+* ArrayLeftRotation
 
 
 
