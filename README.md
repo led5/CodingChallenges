@@ -14,6 +14,7 @@ Running list of all the problems present in the repository:
 * MinSwaps
 * ValidString 
 * FibonacciNumbers
+* BinaryTreeHeight
 
 
 
