@@ -2,19 +2,20 @@
 
 Running list of all the problems present in the repository: 
 
-* PalindromeChecker
-* WordCloud 
-* MostCommonSubstring 
-* MostCommonPrefix
+* palindrome_checker
+* word_cloud
+* most_common_substring
+* most_common_prefix
 * FizzBuzz  
 * DiagonalDifference
-* Anagrams 
-* ArrayLeftRotation
+* anagrams
+* array_left_rotation
 * PairDifference 
 * MinSwaps
-* ValidString 
+* valid_string  
 * FibonacciNumbers
 * BinaryTreeHeight
+* divisible_string 
 
 
 
