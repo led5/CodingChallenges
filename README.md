@@ -17,6 +17,8 @@ Running list of all the problems present in the repository:
 * BinaryTreeHeight
 * divisible_string 
 * ood
+* find_duplicates 
+
 
 
 
