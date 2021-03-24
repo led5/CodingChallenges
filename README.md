@@ -18,6 +18,8 @@ Running list of all the problems present in the repository:
 * divisible_string 
 * ood
 * find_duplicates 
+* unique_paths
+
 
 
 
