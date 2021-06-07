@@ -19,6 +19,8 @@ Running list of all the problems present in the repository:
 * ood
 * find_duplicates 
 * unique_paths
+* reverse_list 
+* transpose_mat
 
 
 
