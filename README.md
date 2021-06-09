@@ -21,6 +21,8 @@ Running list of all the problems present in the repository:
 * unique_paths
 * reverse_list 
 * transpose_mat
+* bst 
+
 
 
 
