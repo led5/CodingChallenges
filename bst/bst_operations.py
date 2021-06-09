@@ -112,9 +112,11 @@ class Node:
         print(root.data)
 
     def levelorder_traversal(self, root):
+        pass 
 
 
 if __name__ == "__main__":
+    
     root = Node(6)
     root = root.insert_node(root, 1)
     root = root.insert_node(root, 10)
