@@ -23,6 +23,7 @@ Running list of all the problems present in the repository:
 * transpose_mat
 * bst 
 * singly_ll 
+* graphs 
 
 
 
