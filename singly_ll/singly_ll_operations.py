@@ -14,6 +14,9 @@ class LinkedList:
                 val type: int
                 rtype: Node 
 
+                Time: O(1)
+                Space: O(n)
+
             '''
             new_node = Node(val)
             new_node.next = self.head 
@@ -27,6 +30,9 @@ class LinkedList:
 
                 val type: int
                 rtype: Node 
+
+                Time: O(n)
+                Space: O(n)
 
             '''
             new_node = Node(val)
@@ -48,6 +54,9 @@ class LinkedList:
                 position type: int 
                 rtype: Node
 
+                Time: O(n)
+                Space: O(n)
+
             '''
             dummy = self.head 
             if position == 0:
@@ -67,6 +76,10 @@ class LinkedList:
 
                 val type: int
                 rtype: bool
+
+                Time: O(n)
+                Space: O(n)
+                
 
             '''
             dummy = self.head

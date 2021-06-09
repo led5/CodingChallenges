@@ -12,6 +12,9 @@ class Node:
             val type: int
             rtype: Node 
 
+            Time: O(log n)
+            Space: O(h) where h is the height of the tree 
+
         '''
         if not root: 
             return Node(val)
@@ -31,6 +34,9 @@ class Node:
             root type: Node 
             val type: int
             rtype: None
+
+            Time: O(log n)
+            Space: O(h) where h is the height of the tree 
 
         '''
         if not root:
@@ -62,6 +68,9 @@ class Node:
             val type: int
             rtype: None 
 
+            Time: O(log n)
+            Space: O(n) where n is the number of nodes 
+
         '''
         while(root):
             if val < root.data:
@@ -78,6 +87,10 @@ class Node:
 
             root type: Node 
             rtype: None
+
+            Time: O(n) where n is the number of nodes
+            Space: O(n)
+
         '''
         if not root:
             return None
@@ -91,6 +104,10 @@ class Node:
 
             root type: Node 
             rtype: None 
+
+            Time: O(n) where n is the number of nodes
+            Space: O(n)
+
         '''
         if not root:
             return None
@@ -104,6 +121,10 @@ class Node:
 
             root type: Node
             rtype: None
+
+           Time: O(n) where n is the number of nodes
+           Space: O(n)
+
         '''
         if not root:
             return None
@@ -118,11 +139,15 @@ class Node:
             root type: Node
             rtype: None 
 
+            Time: O(n) where n is the number of nodes
+            Space: O(n)
+
         '''
         height = self.get_height(root)
         for i in range(1, height+1):
             self.print_levelorder(root, i)
-        
+    
+    # Helper functions 
     def get_height(self, root):
         if not root: 
             return 0
