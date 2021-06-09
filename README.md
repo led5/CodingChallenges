@@ -22,7 +22,7 @@ Running list of all the problems present in the repository:
 * reverse_list 
 * transpose_mat
 * bst 
-
+* singly_ll 
 
 
 

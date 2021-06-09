@@ -112,6 +112,13 @@ class Node:
         print(root.data)
 
     def levelorder_traversal(self, root):
+        '''
+            Print the BST levelorder.
+
+            root type: Node
+            rtype: None 
+
+        '''
         height = self.get_height(root)
         for i in range(1, height+1):
             self.print_levelorder(root, i)
