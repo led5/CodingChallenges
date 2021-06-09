@@ -137,22 +137,3 @@ class Node:
             self.print_levelorder(root.left, level-1)
             self.print_levelorder(root.right, level-1)
 
-
-
-if __name__ == "__main__":
-
-    root = Node(6)
-    root = root.insert_node(root, 1)
-    root = root.insert_node(root, 10)
-    root = root.insert_node(root, 23)
-
-    root = root.delete_node(root, 23)
-
-    root = root.insert_node(root, 35)
-
-    root = root.inorder_traversal(root)
-    root = root.preorder_traversal(root)
-    root = root.postorder_traversal(root)
-    root = root.levelorder_traversal(root)
-
-
