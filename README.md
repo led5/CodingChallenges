@@ -1,6 +1,7 @@
 # Challenges 
-
+```
 Running list of all the problems present in the repository: 
+```
 
 * palindrome_checker
 * word_cloud
